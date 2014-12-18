@@ -21,10 +21,27 @@
     <ClCompile Include="game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="graphics.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="content\bkBlue.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="content\MyChar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="content\PrtCave.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

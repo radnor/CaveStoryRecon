@@ -71,10 +71,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="graphics.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h" />
+    <ClInclude Include="graphics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="content\bkBlue.bmp" />
+    <Image Include="content\MyChar.bmp" />
+    <Image Include="content\PrtCave.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
