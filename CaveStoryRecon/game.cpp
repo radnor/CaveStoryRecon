@@ -1,5 +1,6 @@
 #include "game.h"
 #include "graphics.h"
+#include "sprite.h"
 #include "SDL.h"
 
 namespace {
@@ -20,6 +21,8 @@ void Game::eventLoop() {
 	Graphics graphics;
 	SDL_Event event;
 
+	sprite_.reset(new Sprite("content/MyChar.bmp", 0, 0, 32, 32));
+
 	bool running = true;
 	while (running) {
 		const int start_time_ms = SDL_GetTicks();
@@ -39,7 +42,7 @@ void Game::eventLoop() {
 		}
 
 		update();
-		draw();
+		draw(graphics);
 		const int elapsed_time_ms = SDL_GetTicks() - start_time_ms;
 		SDL_Delay(1000 / kFPS - elapsed_time_ms);
 	}
@@ -49,6 +52,7 @@ void Game::update() {
 
 }
 
-void Game::draw() {
-
+void Game::draw(Graphics& graphics) {
+	sprite_->draw(graphics, 320, 240);
+	graphics.flip();
 }

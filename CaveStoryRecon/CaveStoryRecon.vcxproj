@@ -40,8 +40,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
-    <LibraryPath>C:\Users\Kev\Documents\Visual Studio 2013\Projects\CaveStoryRecon\CaveStoryRecon\SDL-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\Kev\Documents\Visual Studio 2013\Projects\CaveStoryRecon\CaveStoryRecon\SDL-1.2.15\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\Boost\lib;C:\Users\Kev\Documents\Visual Studio 2013\Projects\CaveStoryRecon\CaveStoryRecon\SDL-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Boost\include\boost-1_57;C:\Users\Kev\Documents\Visual Studio 2013\Projects\CaveStoryRecon\CaveStoryRecon\SDL-1.2.15\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -73,15 +73,12 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="graphics.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h" />
     <ClInclude Include="graphics.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="content\bkBlue.bmp" />
-    <Image Include="content\MyChar.bmp" />
-    <Image Include="content\PrtCave.bmp" />
+    <ClInclude Include="sprite.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
